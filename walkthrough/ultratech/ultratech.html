@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Ultra Tech</title>
+        <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            margin: 10px;
+            padding: 10px;
+        }
+        .cent,h1{
+            text-align: center;
+            
+        }
+        .terminal {
+            background-color: #111; /* Slightly lighter black for terminal effect */
+            border: 2px solid #00ff00; /* Green border for terminal window */
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px;
+            box-shadow: 0 0 10px #00ff00;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="https://tryhackme.com/r/room/ultratech1">
+                <h1 style="text-align: center;"> <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/e0f6687c43305e3b67a6cb38951d7b56.png" alt="banner" width="100">   UltraTech
+                    <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 0 24 24"><path fill="currentColor" d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5a4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27A3.273 3.273 0 0 1 6.59 7.08a.625.625 0 0 0 .7-1.035a4.5 4.5 0 0 0-1.68-.69a5.22 5.22 0 0 1 5.096-4.104a5.22 5.22 0 0 1 5.174 4.57a5 5 0 0 0-.488.305a.625.625 0 1 0 .731 1.013a3.25 3.25 0 0 1 1.912-.616a3.28 3.28 0 0 1 3.203 2.61a.625.625 0 0 0 1.225-.251a4.53 4.53 0 0 0-4.428-3.61a4.5 4.5 0 0 0-.958.105C16.556 2.328 13.9 0 10.705 0m5.192 10.64a.9.9 0 0 0-.462.108a.9.9 0 0 0-.313.29a1.3 1.3 0 0 0-.175.427a2.4 2.4 0 0 0-.054.514q0 .271.054.517q.055.246.175.43a.9.9 0 0 0 .313.297q.19.11.462.11q.27 0 .46-.11a.9.9 0 0 0 .309-.296q.12-.185.173-.431q.054-.246.054-.517q0-.27-.054-.514a1.3 1.3 0 0 0-.173-.426a.9.9 0 0 0-.309-.291a.9.9 0 0 0-.46-.108m6.486 0a.9.9 0 0 0-.462.108a.9.9 0 0 0-.313.29a1.3 1.3 0 0 0-.175.427a2.4 2.4 0 0 0-.053.514q0 .271.053.517q.055.246.175.43a.9.9 0 0 0 .313.297q.19.11.462.11q.27 0 .46-.11a.9.9 0 0 0 .31-.296q.117-.185.172-.431t.054-.517q0-.27-.054-.514a1.3 1.3 0 0 0-.173-.426a.9.9 0 0 0-.308-.291a.9.9 0 0 0-.461-.108m-8.537.068l-.84.618l.313.43l.476-.368v1.877h.603v-2.557zm6.486 0l-.841.618l.314.43l.477-.368v1.877h.603v-2.557zm-4.435.445q.119 0 .193.084q.074.085.114.21q.039.125.054.269a2.5 2.5 0 0 1 0 .533q-.015.145-.054.27a.6.6 0 0 1-.114.21a.24.24 0 0 1-.193.085a.25.25 0 0 1-.195-.086a.6.6 0 0 1-.118-.209a1.3 1.3 0 0 1-.056-.27a2.7 2.7 0 0 1 0-.533q.015-.144.056-.27a.6.6 0 0 1 .118-.209a.25.25 0 0 1 .195-.084m6.486 0q.12 0 .193.084q.074.085.114.21t.054.269a2.5 2.5 0 0 1 0 .533q-.014.145-.054.27a.6.6 0 0 1-.114.21a.24.24 0 0 1-.193.085a.25.25 0 0 1-.195-.086a.6.6 0 0 1-.117-.209a1.3 1.3 0 0 1-.056-.27a2.6 2.6 0 0 1 0-.533q.014-.144.056-.27a.6.6 0 0 1 .117-.209a.25.25 0 0 1 .195-.084m-2.191 3.51a.93.93 0 0 0-.463.109a.9.9 0 0 0-.312.291q-.12.182-.175.426a2.4 2.4 0 0 0-.054.514q0 .27.054.516t.175.432a.9.9 0 0 0 .312.296a.9.9 0 0 0 .463.11q.27 0 .46-.11a.9.9 0 0 0 .308-.296a1.3 1.3 0 0 0 .174-.432q.054-.245.054-.516q0-.27-.054-.514a1.3 1.3 0 0 0-.174-.426a.9.9 0 0 0-.309-.291a.9.9 0 0 0-.46-.108zm-6.402.07l-.841.617l.314.43l.476-.369v1.878h.604v-2.557zm2.125 0l-.841.617l.314.43l.477-.369v1.878h.603v-2.557zm2.116 0l-.84.617l.313.43l.477-.369v1.878h.603v-2.557zm2.16.443q.12 0 .194.085a.6.6 0 0 1 .114.21q.04.124.053.269a2.6 2.6 0 0 1 0 .532a1.3 1.3 0 0 1-.053.27a.6.6 0 0 1-.114.21a.24.24 0 0 1-.193.085a.25.25 0 0 1-.196-.085a.6.6 0 0 1-.117-.21a1.3 1.3 0 0 1-.056-.27a2.6 2.6 0 0 1 0-.532q.014-.145.056-.27a.6.6 0 0 1 .117-.209a.25.25 0 0 1 .196-.085zm-6.729 3.073a.7.7 0 0 0-.335.078a.66.66 0 0 0-.227.211a.9.9 0 0 0-.127.31q-.04.177-.04.373c0 .196.013.256.04.375a.9.9 0 0 0 .127.313a.65.65 0 0 0 .227.215q.138.08.335.08a.66.66 0 0 0 .334-.08a.65.65 0 0 0 .225-.215q.086-.135.125-.313a2 2 0 0 0 .04-.375q0-.195-.04-.373a.9.9 0 0 0-.125-.31a.66.66 0 0 0-.225-.21a.7.7 0 0 0-.334-.08zm3.086 0a.7.7 0 0 0-.336.078a.66.66 0 0 0-.226.211a.9.9 0 0 0-.127.31a1.7 1.7 0 0 0-.04.373q0 .197.04.375a.9.9 0 0 0 .127.313q.088.135.226.215q.14.08.336.08a.66.66 0 0 0 .334-.08a.65.65 0 0 0 .224-.215q.087-.135.126-.313a1.75 1.75 0 0 0 0-.748a1 1 0 0 0-.126-.31a.66.66 0 0 0-.224-.21a.7.7 0 0 0-.334-.08zm5.108 0a.7.7 0 0 0-.336.078a.66.66 0 0 0-.226.211a.9.9 0 0 0-.127.31q-.04.177-.04.373c0 .196.013.256.04.375a.9.9 0 0 0 .127.313q.087.135.226.215q.14.08.336.08t.334-.08a.65.65 0 0 0 .224-.215q.087-.135.126-.313a2 2 0 0 0 .04-.375q0-.195-.04-.373a1 1 0 0 0-.126-.31a.66.66 0 0 0-.224-.21a.7.7 0 0 0-.334-.08zm-6.658.05l-.61.448l.227.311l.346-.266v1.362h.438v-1.856zm3.068 0l-.61.448l.227.311l.346-.266v1.362h.438v-1.856zm5.108 0l-.611.448l.228.311l.346-.266v1.362h.438v-1.856zm-9.712.322q.087 0 .14.062a.4.4 0 0 1 .083.151a1 1 0 0 1 .04.196a2 2 0 0 1 0 .386a1 1 0 0 1-.04.197a.4.4 0 0 1-.083.152a.18.18 0 0 1-.14.061a.18.18 0 0 1-.141-.06a.4.4 0 0 1-.085-.153a1 1 0 0 1-.041-.197a2 2 0 0 1 0-.386a1 1 0 0 1 .04-.196a.4.4 0 0 1 .086-.151a.18.18 0 0 1 .141-.062m3.086 0q.086 0 .14.062a.4.4 0 0 1 .082.151a1 1 0 0 1 .04.196a2 2 0 0 1 0 .386a1 1 0 0 1-.04.197a.4.4 0 0 1-.082.152a.18.18 0 0 1-.14.061a.18.18 0 0 1-.141-.06a.4.4 0 0 1-.086-.153a1 1 0 0 1-.04-.197a2 2 0 0 1-.011-.195q0-.086.01-.191a1 1 0 0 1 .041-.196a.4.4 0 0 1 .086-.151a.18.18 0 0 1 .141-.062m5.108 0q.087 0 .14.062a.4.4 0 0 1 .082.151a1 1 0 0 1 .04.196a2 2 0 0 1 0 .386a1 1 0 0 1-.04.197a.4.4 0 0 1-.082.152a.18.18 0 0 1-.14.061a.18.18 0 0 1-.142-.06a.4.4 0 0 1-.085-.153a1 1 0 0 1-.04-.197a2 2 0 0 1-.011-.195q0-.086.01-.191a1 1 0 0 1 .04-.196a.5.5 0 0 1 .086-.151a.18.18 0 0 1 .142-.062m-1.684 1.814a.7.7 0 0 0-.336.079a.66.66 0 0 0-.227.21a.9.9 0 0 0-.127.31a1.7 1.7 0 0 0 0 .748a1 1 0 0 0 .127.314q.088.135.227.215q.14.08.336.08a.66.66 0 0 0 .334-.08a.65.65 0 0 0 .224-.215q.087-.135.126-.314a1.7 1.7 0 0 0-.001-.747a.9.9 0 0 0-.125-.31a.65.65 0 0 0-.224-.211a.7.7 0 0 0-.334-.079m3.063 0a.7.7 0 0 0-.336.079a.7.7 0 0 0-.227.21a.9.9 0 0 0-.127.31a1.7 1.7 0 0 0 0 .748a.9.9 0 0 0 .127.314a.66.66 0 0 0 .227.215q.138.08.336.08a.65.65 0 0 0 .334-.08a.65.65 0 0 0 .223-.215q.087-.135.126-.314a1.7 1.7 0 0 0 0-.747a.9.9 0 0 0-.126-.31a.65.65 0 0 0-.223-.211a.7.7 0 0 0-.334-.079m-1.545.05l-.611.448l.228.312l.346-.267v1.363h.438v-1.856zm-1.518.323q.086 0 .14.061a.4.4 0 0 1 .082.152a1 1 0 0 1 .04.195a2 2 0 0 1 0 .387a1 1 0 0 1-.04.197a.4.4 0 0 1-.082.152a.18.18 0 0 1-.14.06a.18.18 0 0 1-.142-.06a.4.4 0 0 1-.085-.152a1 1 0 0 1-.04-.197a2 2 0 0 1-.011-.195q0-.087.01-.192a1 1 0 0 1 .041-.195q.03-.09.085-.152a.18.18 0 0 1 .142-.061m3.063 0q.086 0 .14.061a.4.4 0 0 1 .082.152a1 1 0 0 1 .04.195a2 2 0 0 1 0 .387a1 1 0 0 1-.04.197a.4.4 0 0 1-.083.152a.18.18 0 0 1-.14.06a.18.18 0 0 1-.141-.06a.4.4 0 0 1-.085-.152a1 1 0 0 1-.04-.197a2 2 0 0 1 0-.387a1 1 0 0 1 .04-.195q.03-.09.085-.152a.18.18 0 0 1 .142-.061m-9.713.185a.5.5 0 0 0-.232.055a.46.46 0 0 0-.157.146a.6.6 0 0 0-.089.215a1.2 1.2 0 0 0-.027.259q0 .135.027.26a.7.7 0 0 0 .089.216q.06.094.157.149a.46.46 0 0 0 .232.056q.136-.001.231-.056a.45.45 0 0 0 .156-.149a.7.7 0 0 0 .087-.217a1.2 1.2 0 0 0 0-.518a.7.7 0 0 0-.087-.215a.45.45 0 0 0-.156-.146a.46.46 0 0 0-.23-.055zm1.052.035l-.423.31l.158.217l.24-.185v.944h.303v-1.286zm-1.052.224q.06 0 .097.042a.3.3 0 0 1 .057.105a.7.7 0 0 1 .028.136q.006.073.007.133q0 .06-.007.135a.7.7 0 0 1-.028.136a.3.3 0 0 1-.057.105a.12.12 0 0 1-.097.043a.13.13 0 0 1-.098-.043a.3.3 0 0 1-.059-.105a.6.6 0 0 1-.028-.136a1.4 1.4 0 0 1 0-.268a.6.6 0 0 1 .028-.136a.3.3 0 0 1 .06-.105a.13.13 0 0 1 .097-.042m3.775 1.394a.46.46 0 0 0-.232.054a.45.45 0 0 0-.157.146a.6.6 0 0 0-.088.214a1.2 1.2 0 0 0 0 .519a.6.6 0 0 0 .088.217a.46.46 0 0 0 .157.15a.46.46 0 0 0 .232.054a.45.45 0 0 0 .232-.055a.45.45 0 0 0 .155-.149a.7.7 0 0 0 .087-.217a1.2 1.2 0 0 0 0-.519a.6.6 0 0 0-.087-.214a.45.45 0 0 0-.155-.146a.46.46 0 0 0-.232-.054m1.052.034l-.423.31l.158.216l.24-.185v.945h.303V22.68zm-1.052.223q.06 0 .098.043a.3.3 0 0 1 .057.105a.6.6 0 0 1 .027.135a1.3 1.3 0 0 1 0 .268a.7.7 0 0 1-.027.137a.3.3 0 0 1-.057.105a.12.12 0 0 1-.098.042a.13.13 0 0 1-.098-.042a.3.3 0 0 1-.059-.105a.6.6 0 0 1-.028-.137a1.4 1.4 0 0 1 0-.268a.6.6 0 0 1 .028-.135a.3.3 0 0 1 .06-.105a.12.12 0 0 1 .097-.043"/>
+                    </svg>
+                </h1>
+            </a>
+        </div>
+        <div>
+            <div >
+                <h1 class="terminal">STEP 1:</h1>
+                    <p>a) Do Reconnaissance, use the tool nmap, we will find some open ports . Identify the services running<br>
+                        <div class="cent"><img src="img/img1.png" height="40%" width="40%"></div>
+                        <div class="cent"><img src="img/img2.png" height="40%" width="40%"></div>
+                        <div class="cent"><img src="img/img3.png" height="40%" width="40%"></div>
+
+                        b) Now we can answer the questions in enumeration section:<br>
+                            <p>Which software is using the port 8081?<br>
+                                => Node.js<br>
+                                Which other non-standard port is used?<br>
+                                => 31331 <br>
+                                Which software using this port?<br>
+                                =>Apache<br>
+                                Which GNU/Linux distribution seems to be used?<br>
+                                =>Ubuntu<br>
+                            </p>
+                    </p>
+                <h1 class="terminal">STEP 2:</h1>
+                    <p>
+                        a) The software using the port 8081 is a REST api, how many of its routes are used by the web application?<br>
+                            
+                            Routing specifies how an application responds to a client request to a particular route, URI or path and a specific HTTP request method (GET, POST, etc.) <br>
+                            Visit the website http://machineip:8081, we dont find anything here <br>
+                            Then visit http://machineip:31331 , we get a website <br>
+                            <div style="text-align: center;"><img src="img/img6.png" height="50%" width="50%"></div>
+                            Check http://machineip:31331/robots.txt , we found site map; the sitemap contains /index.html, /what.html, /partners.html;we will then visit them then view-source one by one
+                            <div style="text-align: center;"><img src="img/img4.png" height="30%" width="30%"></div>
+                            <div style="text-align: center;"><img src="img/img5.png" height="30%" width="30%"></div>
+                            The /partners.html view-source has app.js, here we found some info; using API there are requests for two routes /ping and /auth 
+                            <div style="text-align: center;"><img src="img/img7.png" height="50%" width="50%"></div>
+                            <div style="text-align: center;"><img src="img/img8.png" height="50%" width="50%"></div>
+
+                            =>2<br>
+                                 
+                    </p>
+                <h1 class="terminal">STEP 3:</h1>
+                    <p>
+                        Let The Fun Begin:<br>
+                        Now that you know which services are available, it's time to exploit them!<br>
+                        Did you find somewhere you could try to login? Great!<br>
+                        Quick and dirty login implementations usually goes with poor data management.<br>
+                        There must be something you can do to explore this machine more thoroughly..<br>
+                        <br>
+                        a) We have seen earlier that a ping route is being requested with APIURL. So lets visit http://machineip:8081/ping <br>
+                            some error message has come up <br>
+                            <div style="text-align: center;"><img src="img/img9.png" height="50%" width="50%"></div>
+                        b) We can use /ping?ip='ls' and get a list output; utech.db.sqlite<br>
+                        c) We try to pass cat command and read it, take care of the encoding;  /ping?ip='cat%20utech.db.sqlite'<br>
+                        d) We will get output having 2 user and 2 hash for password !!<br>
+                        e)  Crack it using crackstation online hash cracker; get the password for user r00t
+
+                    </p>
+                <h1 class="terminal"> STEP 4:</h1>
+                The Root of All Evil:
+                    <p>
+                        a) {What are the first 9 characters of the root user's private SSH key?} we can guess we need to do ssh !!!<br>
+                        b) Use user: r00t ans password that we cracked earlier ; Yay :) ssh login successfull <br>
+                        c) Still we cant read the root user's private SSH key; we have to escalate privilege <br>
+                        d) command id shows that I belong to a group docker; run command: docker images; this will list the images availabe<br>
+                        e) goto website GTFObins and search docker <br>
+                        <div style="text-align: center;"><img src="img/img10.png" height="50%" width="50%"></div>
+                        f) We dont have alpine image but we have bash so use this command: docker run -v /:/mnt --rm -it bash chroot /mnt sh<br>
+                        g) YAY we are in !! now go to .ssh and read the id_rsa
+                    </p>
+            </div>
+        </div>
+        <hr>
+        <p style="text-align: center;color: white;">dildarmandal © 2024</p>
+    </body>
+</html>
