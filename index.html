@@ -4,6 +4,65 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Portfolio</title>
+ <style>
+        body {
+            /*font-family: Arial, sans-serif;*/
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 15px;
+            background-color: #f0f0f0;
+        }
+        header a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 6px;
+            font-weight: bold;
+        }
+        section {
+            padding: 26px;
+            text-align: center;
+        }
+        .about-text, .projects-content, .exp-area ,.learn{
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        .projects-content ul, .exp-area ul {
+            list-style-type: disc;
+            margin: 0;
+            padding: 0 20px;
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+        }
+        .box div {
+            width: 150px;
+        }
+        .box p {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        .box img {
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            font-size: 12px;
+        }
+        a:hover {
+            color: #007bff;
+        }
+    </style>
     </head>
     <body >
         <header style="text-align: center;">
@@ -15,14 +74,13 @@
             <a href="https://www.linkedin.com/in/md-dildar-mandal-837048199/" target="_blank">LinkedIn</i></a> | 
             <a href="https://x.com/m_dildar_m?t=3SloowhGWpASPXpXnUeoqA&s=08" target="_blank">X</a>
         </header>
-        <section id="home" style="text-align: center;font-size:16pt; margin-top:50px;">
-            
-            <div >
+        <section id="home" style="font-size:16pt; margin-top:50px;">   
+    
                 <h1>Hi, I am Md Dildar Mandal</h1>
                 <img src="./img/hero.png" height="200">
             </div>
-
         </section>
+
         <section id="about" style="text-align: center;font-size:14pt;">
                 <div class="about-text">
                     <p> A Cyber Security enthusiast , proficient in threat analysis, incident response, and implementing security measures to safeguard data and systems against cyber attacks . I am a final year student of Computer Science and Engineering in Central Institue of Technology Kokrajhar.
@@ -35,7 +93,7 @@
                     <h2>Projects</h2>
                 </div>
                 <div class="projects-content">
-                    <div class="box">
+                    <div >
                         <div>
                             <ul>
                                 <li>Configuring and updating Microsoft Windows Defender and Firewall</li>
@@ -50,30 +108,125 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="box">
-                        <h2>TryHackMe Rooms Solved
-                        <div>
-                            <script src="https://tryhackme.com/badge/1606166"></script>
+                                    </div>
+        </section>
+
+        <!--skills&learning-->
+        <section id="skills&learning">
+            <div>
+                <h2>Skills</h2>
+            </div>
+            <div class="exp-area">
+                <div>
+                    <p>
+                        <ul>
+                        <li>Vulnerability Assessment, Risk Management, Reconnaissance, SQL Injection, Networking, Threat Assessment, NIST Framework, Owasp Top 10</li>
+                        <li>Tools: BurpSuite, Nmap, Wireshark, Tcpdump, Terminal, Github, Microsoft Windows Defender and Firewall, Cisco Packet Tracer, Microsoft Active Directory</li>
+                        <li>Operating System : Linux (Ubuntu, Kali) , Microsoft Windows</li>
+                        <li>Programming : C , C++ , Python, Bash scripting, HTML , CSS</li>
+                    </ul>
+                    </p>
+                </div>
+            </div> 
+                <h2 style="text-align: center;">TryHackMe Rooms Solved
+                    <div>
+                        <script src="https://tryhackme.com/badge/1606166"></script>
+                    </div>
+                </h2>
+                <div class="box">
+                         <div>
+                            <p>Metasploit: Introduction</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/ad5a831987ef92f60ea5ecd4b29523c3.png" height="50" width="50">
+                            </span>
                         </div>
-                        </h2>
+  <div>
+                            <p>Threat Intelligience Tools</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/ca41d99a177058ca1c3a65eab570d5e2.png" height="50" width="50">
+                            </span>
+                        </div>
+  <div>
+                            <p>Intro To Cyber Threat Intel</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/5df3d790c09cc73892e4957138d870e0.png" height="50" width="50">
+                            </span>
+                        </div>
+  <div>
+                            <p>Unified Kill Chain</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/f41ca18ac58ffaae35cc78ba615f238d.png" height="50" width="50">
+                            </span>
+                        </div>
+  <div>
+                            <p>Cyber Kill Chain</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/238518cde4ea945bdf773cd4d411ba43.png" height="50" width="50">
+                            </span>
+                        </div>
+  <div>
+                            <p>Pyramid Of Pain</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/ec7948465f169b0a00f13fda2711c909.png" height="50" width="50">
+                            </span>
+                        </div>
+                       
                         <div>
+                            <p>Junior Security Analyst Intro</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/fe20101a31599f984639afad0f54a2e1.png" height="50" width="50">
+                            </span>
+                        </div> 
+                         <div>
+                            <p>Clocky</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/b61de27b64fc9da5f0d2c418a4754efa.png" height="50" width="50">
+                            </span>
+                        </div>
+                          <div>
+                            <p>Phishing Analysis Fundamentals</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/f06ddb74933f0e6ccd80c92a14489d2a.png" height="50" width="50">
+                            </span>
+                        </div>  
+                        <div>
+                            <p>OWASP Top 10 - 2021</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/3b2f3af8e836785fe698356264efbb55.png"height="50" width="50">
+                            </span>
+                        </div>  
+                        <div>
+                            <p>Intro to Logs</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/19b19a4e55a402acb3161cd43f520381.png" height="50" width="50">
+                            </span>
+                        </div>   
+                    <div>
+                            <p>Offensive Security Intro</p>
+                            <span>
+                                <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/f9dbbfc2dadce39c2ce9a592a0389d38.png" height="50" width="50">
+                            </span>
+                        </div>
+                         <div>
                             <p>UltraTech</p>
                             <span>
                                 <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/e0f6687c43305e3b67a6cb38951d7b56.png" height="50" width="50">
                                 <a href="walkthrough/ultratech/ultratech.html" target="_blank">Walkthrough</a>
                             </span>
-                            </div>
-                        <div>
+                        </div>
                         <div>
                             <p>Pickle Rick</p>
                             <span>
                                 <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/47d2d3ade1795f81a155d0aca6e4da96.jpeg" height="70" width="70">
                                 <a href="walkthrough/picklerick/picklerickv2.html" target="_blank">Walkthrough</a>
                             </span>
-                            </div>
+                        </div>
                         <div>
                             <p>Mr Robot CTF</p>
+
+                            <span>
                             <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/7a8797ae59733f2a72f0e8a8748be128.jpeg" height="50" width="50">
+                            </span>
                         </div>
                         <div>
                             <p>Beelzebub: 1</p>
@@ -110,30 +263,18 @@
                         <div>
                             <p>Burp Suite: Repeater</p>
                             <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/003f622eb51e1399dde189ddbc9804a3.png" height="45" width="45">
-                        </div>
-                    </div>
-                </div>
+                        </div> 
+               </div>
         </section>
-
-        <!--skills&learning-->
-        <section id="skills&learning">
-            <div>
-                <h2>Skills</h2>
-            </div>
-            <div class="exp-area">
-                <div>
-                    <p>
-                        <ul>
-                        <li>Vulnerability Assessment, Risk Management, Reconnaissance, SQL Injection, Networking, Threat Assessment, NIST Framework, Owasp Top 10</li>
-                        <li>Tools: BurpSuite, Nmap, Wireshark, Tcpdump, Terminal, Github, Microsoft Windows Defender and Firewall, Cisco Packet Tracer, Microsoft Active Directory</li>
-                        <li>Operating System : Linux (Ubuntu, Kali) , Microsoft Windows</li>
-                        <li>Programming : C , C++ , Python, Bash scripting, HTML , CSS</li>
-                    </ul>
-                    </p>
-                </div>
-                <div> 
+        <section class="LandE">
+           
                     <h2>Learning and Experience</h2>
+            <div class="learn">
                     <p>
+                        _Cyber Defence Frameworks<br>
+                        _Cyber Threat Intelligence<br>
+                        _Network Security and Traffic Analysis<br>
+                        _Windows Event Logs & Finding Evil<br>
                         _Nexus Elite CTF, organized by YCF Team <br>
                         _Ethical Hacking Essentials (EHE) - Platform: Codered from EC-COUNCIL<br>
                         _Google Cybersecurity Certificate<br>
@@ -151,7 +292,6 @@
                         _Introduction to Active Directory : HTB Academy<br>
                         _Intro to Network Traffic Analysis : HTB Academy 
                     </p>
-                </div>
             </div>
         </section>
         <div class="exp-area">
